@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#102d2a" />
+<title>Raahat — Jammu Relief Connect</title>
+<style>
+:root{--ink:#152c2a;--muted:#687774;--green:#174e43;--lime:#d9f36a;--cream:#f7f7f1;--line:#e1e7df;--white:#fff;--red:#c74635;--amber:#b7791f;--shadow:0 12px 40px #163b3010}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button,a{cursor:pointer}a{color:inherit;text-decoration:none}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 6.5%;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.brand{display:flex;gap:11px;align-items:center;font-weight:850;font-size:21px;letter-spacing:-.7px}.logo{width:38px;height:38px;border-radius:12px;background:var(--green);color:var(--lime);display:grid;place-items:center;font-size:21px}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:1.8px;font-weight:750;margin-top:1px}.nav{display:flex;align-items:center;gap:28px;font-size:13px;color:#4c605b;font-weight:650}.nav a:hover{color:var(--green)}.nav .nav-cta{background:var(--green);color:white;padding:12px 18px;border-radius:10px}.hero{background:var(--green);color:#fff;padding:64px 6.5% 48px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:440px;height:440px;border:1px solid #ffffff20;border-radius:50%;right:-85px;top:-185px;box-shadow:0 0 0 45px #ffffff08,0 0 0 100px #ffffff05;pointer-events:none}.hero-inner{max-width:1220px;margin:auto;display:grid;grid-template-columns:1.08fr .92fr;gap:46px;align-items:center;position:relative;z-index:1}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid #ffffff36;border-radius:50px;padding:8px 12px;font-size:11px;font-weight:750;letter-spacing:1.3px;text-transform:uppercase;color:#e6f2cf}.pulse{width:7px;height:7px;background:var(--lime);border-radius:50%;box-shadow:0 0 0 4px #d9f36a22}.hero h1{font-size:clamp(42px,5.3vw,68px);line-height:1.03;letter-spacing:-3px;margin:23px 0 20px;max-width:660px}.hero h1 em{font-style:normal;color:var(--lime)}.hero p{font-size:16px;line-height:1.75;color:#d0e0d9;max-width:520px;margin:0 0 27px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn{border:0;border-radius:10px;padding:14px 19px;font-size:13px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:transform .15s,opacity .15s}.btn:hover{transform:translateY(-1px)}.btn-lime{background:var(--lime);color:#203b2d}.btn-outline{border:1px solid #ffffff50;color:#fff;background:#ffffff0b}.hero-note{font-size:11px!important;color:#a9c6b9!important;margin-top:18px!important}.hero-visual{min-height:350px;position:relative;display:grid;place-items:center}.map-card{width:min(100%,470px);background:#f3f5eb;border-radius:23px;padding:17px;color:var(--ink);box-shadow:0 30px 65px #061d1833;transform:rotate(1.5deg)}.map-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:12px;font-weight:800}.live-tag{font-size:10px;background:#e0f6cd;color:#27623c;padding:6px 9px;border-radius:30px}.map-art{height:218px;border-radius:15px;overflow:hidden;background:#e0e9d7;position:relative}.map-art svg{width:100%;height:100%;display:block}.map-label{position:absolute;background:white;border:1px solid #e2e8dc;padding:8px 10px;border-radius:9px;font-size:10px;font-weight:800;box-shadow:0 3px 12px #173b2514}.map-label.one{left:12px;top:15px}.map-label.two{right:12px;bottom:14px}.map-bottom{display:flex;justify-content:space-between;align-items:center;padding:13px 2px 1px;font-size:11px;color:var(--muted)}.map-bottom strong{color:var(--green);font-size:16px}.float-chip{position:absolute;left:-8px;bottom:23px;background:#fff;color:var(--ink);border-radius:13px;padding:13px 16px;box-shadow:var(--shadow);font-size:11px;font-weight:750}.float-chip b{color:#22825a}.float-chip span{display:block;font-size:10px;color:var(--muted);font-weight:500;margin-top:4px}.stats{max-width:1220px;margin:-1px auto 0;padding:0 6.5%;display:grid;grid-template-columns:repeat(4,1fr);background:#fff}.stat{padding:25px 20px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}.stat:first-child{border-left:1px solid var(--line)}.stat strong{font-size:25px;letter-spacing:-1px;display:block}.stat span{font-size:11px;color:var(--muted);display:block;margin-top:5px}.section{max-width:1220px;margin:auto;padding:72px 6.5%}.section-head{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:28px}.kicker{font-size:10px;text-transform:uppercase;letter-spacing:1.7px;font-weight:850;color:#648078}.section h2{font-size:clamp(28px,3.5vw,41px);letter-spacing:-1.6px;line-height:1.12;margin:10px 0 0}.section-head p{max-width:370px;color:var(--muted);font-size:13px;line-height:1.65;margin:0}.dashboard{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:start}.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px;box-shadow:var(--shadow)}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:20px}.panel-head h3{font-size:16px;letter-spacing:-.4px;margin:0}.small-muted{font-size:11px;color:var(--muted)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:800;color:#415651}.field input,.field select,.field textarea{width:100%;border:1px solid #dce4db;border-radius:9px;padding:12px;background:#fcfdf9;color:var(--ink);outline:none;font-size:12px}.field textarea{resize:vertical;min-height:90px}.field input:focus,.field select:focus,.field textarea:focus{border-color:#4e8973;box-shadow:0 0 0 3px #4e897315}.field .hint{font-size:10px;color:var(--muted);line-height:1.4}.priority{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.priority label{display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--line);padding:11px 5px;border-radius:9px;font-size:11px;cursor:pointer}.priority input{width:auto;accent-color:var(--green)}.submit-row{display:flex;align-items:center;gap:12px;margin-top:19px;flex-wrap:wrap}.submit-row .btn{flex:1}.form-message{font-size:11px;color:#216747;margin-top:12px;line-height:1.5}.volunteer-tools{display:flex;gap:8px;align-items:center;margin-bottom:15px}.search{min-width:0;flex:1;border:1px solid var(--line);border-radius:9px;padding:10px 12px;font-size:11px;background:#fbfcf8}.filter{border:1px solid var(--line);border-radius:9px;padding:10px;background:#fff;font-size:11px;color:var(--ink)}.volunteer-list{display:flex;flex-direction:column;gap:10px}.volunteer{display:flex;gap:12px;align-items:center;padding:13px;border:1px solid #e7ebe4;border-radius:13px}.avatar{width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;border-radius:13px;font-size:14px;font-weight:850;background:#e1efdf;color:#285a45}.avatar.orange{background:#f8e7d6;color:#9b5826}.avatar.blue{background:#dcebf5;color:#2c6280}.vol-info{min-width:0;flex:1}.vol-info strong{font-size:12px;display:block}.vol-info span{font-size:10px;color:var(--muted);display:block;margin-top:4px}.vol-meta{text-align:right;white-space:nowrap}.distance{font-size:11px;font-weight:850}.status{display:inline-flex;align-items:center;gap:5px;font-size:9px;font-weight:800;color:#2c7b50;margin-top:6px}.status:before{content:"";width:6px;height:6px;border-radius:50%;background:#46ae6c}.status.busy{color:#a56b18}.status.busy:before{background:#dfa338}.contact{border:0;background:#edf4e9;color:#285b44;padding:8px 10px;border-radius:8px;font-size:10px;font-weight:850;margin-top:8px}.contact:hover{background:#dcebd6}.empty{font-size:12px;color:var(--muted);padding:20px;text-align:center}.emergency-band{background:#fff0ed;border:1px solid #f5d2cb;border-radius:13px;padding:14px 15px;display:flex;gap:12px;align-items:flex-start;margin-bottom:18px}.emergency-icon{background:#c74635;color:white;width:30px;height:30px;display:grid;place-items:center;border-radius:9px;flex:0 0 30px}.emergency-band strong{font-size:12px;color:#8d3025;display:block}.emergency-band p{font-size:10px;line-height:1.55;color:#8c554d;margin:5px 0 0}.map-section{background:#edf2e8}.map-section .section{padding-top:58px;padding-bottom:58px}.area-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}.large-map{background:#dfe9d7;border-radius:16px;min-height:330px;position:relative;overflow:hidden;border:1px solid #d1ddca}.large-map svg{width:100%;height:100%;position:absolute;inset:0}.map-caption{position:absolute;left:17px;top:17px;background:white;padding:10px 13px;border-radius:10px;font-size:11px;font-weight:850;box-shadow:var(--shadow)}.map-legend{position:absolute;left:17px;bottom:16px;right:17px;background:#ffffffed;padding:12px;border-radius:10px;display:flex;gap:15px;flex-wrap:wrap;font-size:10px;color:#53655d}.legend-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}.area-list{display:flex;flex-direction:column;gap:10px}.area-row{background:#fff;border:1px solid #dfe7db;border-radius:13px;padding:15px;display:flex;align-items:center;gap:12px}.area-symbol{width:35px;height:35px;display:grid;place-items:center;background:#eff4e9;border-radius:10px;font-size:16px}.area-row div:nth-child(2){flex:1}.area-row strong{font-size:12px;display:block}.area-row span{font-size:10px;color:var(--muted);display:block;margin-top:4px}.area-count{font-size:11px;font-weight:850;color:var(--green)}.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.how-card{background:white;border:1px solid var(--line);border-radius:15px;padding:21px}.how-num{width:35px;height:35px;background:#e8f2dc;color:#285b44;display:grid;place-items:center;border-radius:11px;font-weight:900;font-size:12px}.how-card h3{font-size:14px;margin:17px 0 8px}.how-card p{font-size:11px;color:var(--muted);line-height:1.7;margin:0}.footer{background:#112f2b;color:#fff;padding:30px 6.5%;display:flex;justify-content:space-between;gap:20px;align-items:center}.footer p{font-size:10px;color:#a8c0b5;line-height:1.6;margin:5px 0}.footer strong{font-size:14px}.footer .disclaimer{max-width:520px;text-align:right}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#153c32;color:white;padding:13px 18px;border-radius:11px;box-shadow:0 10px 30px #0002;font-size:12px;z-index:10;display:none;max-width:90%;text-align:center}.toast.show{display:block}.modal-backdrop{position:fixed;inset:0;background:#0d2420a6;display:none;align-items:center;justify-content:center;padding:20px;z-index:20}.modal-backdrop.show{display:flex}.modal{background:#fff;border-radius:18px;padding:25px;max-width:420px;width:100%;box-shadow:0 20px 80px #0003}.modal h3{margin:0 0 10px;font-size:20px}.modal p{font-size:12px;color:var(--muted);line-height:1.65}.modal-actions{display:flex;gap:10px;margin-top:18px}.modal-actions .btn{flex:1}.btn-dark{background:var(--green);color:white}.btn-light{background:#eef2eb;color:var(--ink)}
+@media(max-width:850px){.topbar{padding:0 5%;height:67px}.nav{gap:15px}.nav a:not(.nav-cta){display:none}.hero{padding:48px 5% 35px}.hero-inner{grid-template-columns:1fr;gap:10px}.hero h1{font-size:51px}.hero-visual{min-height:310px}.map-card{max-width:500px}.float-chip{left:0;bottom:5px}.stats{padding:0 5%;grid-template-columns:repeat(2,1fr)}.stat{padding:18px}.section{padding:55px 5%}.dashboard,.area-grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.section-head p{max-width:550px}.footer{padding:25px 5%;align-items:flex-start;flex-direction:column}.footer .disclaimer{text-align:left}}@media(max-width:520px){.brand{font-size:18px}.nav .nav-cta{padding:10px 12px;font-size:11px}.hero h1{font-size:43px;letter-spacing:-2px}.hero p{font-size:14px}.hero-visual{min-height:270px}.map-art{height:180px}.map-card{padding:12px}.float-chip{bottom:-2px;left:4px}.stat strong{font-size:22px}.section{padding-top:45px;padding-bottom:45px}.panel{padding:17px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.how-grid{grid-template-columns:1fr}.priority label{font-size:10px}.volunteer{gap:9px;padding:10px}.avatar{width:37px;height:37px;flex-basis:37px}.vol-meta{white-space:normal}.contact{padding:7px}.large-map{min-height:270px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="Raahat home"><span class="logo">✳</span><span>raahat<small>JAMMU RELIEF CONNECT</small></span></a>
+  <nav class="nav"><a href="#how">How it works</a><a href="#volunteers">Find volunteers</a><a href="#areas">Coverage</a><a class="nav-cta" href="#request">Get help&nbsp; ↗</a></nav>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow"><span class="pulse"></span> Community-powered response · Jammu</span>
+      <h1>When it matters,<br>help is <em>closer.</em></h1>
+      <p>A local-first network connecting people in Jammu with nearby volunteers for urgent assistance, disaster support, and everyday care.</p>
+      <div class="hero-actions"><a class="btn btn-lime" href="#request">Request assistance <span>↗</span></a><a class="btn btn-outline" href="#volunteers">Explore volunteers ↓</a></div>
+      <p class="hero-note">Built for a prototype · Demo volunteer data · Not an official emergency service</p>
+    </div>
+    <div class="hero-visual">
+      <div class="map-card">
+        <div class="map-top"><span>Jammu response network</span><span class="live-tag">● DEMO VIEW</span></div>
+        <div class="map-art">
+          <svg viewBox="0 0 440 218" preserveAspectRatio="xMidYMid slice" aria-label="Illustrated map of Jammu">
+            <rect width="440" height="218" fill="#e5eddc"/>
+            <path d="M-10 40 Q65 18 112 54 T220 48 T330 36 T455 58 M-10 100 Q65 78 130 115 T240 101 T350 90 T455 112 M-10 168 Q80 130 140 167 T260 160 T365 149 T455 175" fill="none" stroke="#c6d7b8" stroke-width="2"/>
+            <path d="M18 214 C65 174 72 128 125 115 S193 132 220 86 S286 61 310 28 S385 17 445 0" fill="none" stroke="#b4c9d8" stroke-width="16" opacity=".8"/>
+            <path d="M18 214 C65 174 72 128 125 115 S193 132 220 86 S286 61 310 28 S385 17 445 0" fill="none" stroke="#f5fafb" stroke-width="8"/>
+            <path d="M0 72 L94 81 L155 35 L211 61 L285 45 L351 81 L440 67 M46 0 L75 58 L61 117 L105 164 L95 218 M180 0 L192 55 L167 92 L203 147 L188 218 M360 0 L341 59 L380 120 L352 177 L365 218" fill="none" stroke="#fff" stroke-width="3"/>
+            <path d="M45 125 C94 110 122 148 163 121 S236 108 261 84 S334 91 382 57" fill="none" stroke="#86a88c" stroke-width="2" stroke-dasharray="5 5"/>
+            <g><circle cx="155" cy="117" r="17" fill="#d9f36a" opacity=".55"/><circle cx="155" cy="117" r="7" fill="#174e43" stroke="#fff" stroke-width="3"/><text x="168" y="110" fill="#23483b" font-size="10" font-weight="700">Jammu City</text></g>
+            <g><circle cx="270" cy="82" r="15" fill="#f3b69b" opacity=".55"/><circle cx="270" cy="82" r="6" fill="#c74635" stroke="#fff" stroke-width="3"/><text x="282" y="76" fill="#7c3b2e" font-size="9" font-weight="700">Rescue team</text></g>
+            <g><circle cx="93" cy="171" r="6" fill="#3878a1" stroke="#fff" stroke-width="3"/><text x="104" y="185" fill="#285773" font-size="9" font-weight="700">Gandhi Nagar</text></g>
+            <g><circle cx="355" cy="137" r="6" fill="#174e43" stroke="#fff" stroke-width="3"/><text x="294" y="155" fill="#23483b" font-size="9" font-weight="700">Trikuta Nagar</text></g>
+          </svg>
+          <div class="map-label one">📍 Jammu district</div><div class="map-label two">🫶 Nearby help, coordinated</div>
+        </div>
+        <div class="map-bottom"><span>Illustrative coverage map</span><strong>Local-first</strong></div>
+      </div>
+      <div class="float-chip">✳ Neighbours helping neighbours <span><b>●</b> Community response starts here</span></div>
+    </div>
+  </div>
+</section>
+<div class="stats">
+  <div class="stat"><strong>01</strong><span>One place to request help</span></div>
+  <div class="stat"><strong>24/7*</strong><span>Designed for urgent needs</span></div>
+  <div class="stat"><strong>Local</strong><span>Area-based volunteer discovery</span></div>
+  <div class="stat"><strong>Human</strong><span>People-first coordination</span></div>
+</div>
+
+<section class="section" id="request">
+  <div class="section-head"><div><span class="kicker">Start here</span><h2>What do you need help with?</h2></div><p>Share the essentials. This demo will create a local request preview and suggest matching sample volunteers.</p></div>
+  <div class="emergency-band"><span class="emergency-icon">!</span><div><strong>In immediate danger?</strong><p>Contact India's emergency number <b>112</b> now. Do not wait for a website or volunteer response. This prototype does not dispatch emergency services.</p></div></div>
+  <div class="dashboard">
+    <div class="panel">
+      <div class="panel-head"><h3>Request assistance</h3><span class="small-muted">Takes about 1 minute</span></div>
+      <form id="helpForm">
+        <div class="form-grid">
+          <div class="field"><label for="personName">Your name</label><input id="personName" name="personName" placeholder="e.g. Ayesha" required maxlength="70"/></div>
+          <div class="field"><label for="phone">Contact number</label><input id="phone" name="phone" type="tel" placeholder="Your phone number" required maxlength="20"/></div>
+          <div class="field"><label for="needType">Type of assistance</label><select id="needType" name="needType" required><option value="">Choose a category</option><option value="Disaster / flood">Flood / landslide support</option><option value="Medical / hospital">Hospital or medical transport</option><option value="Elder care">Help for an older person</option><option value="Food / essentials">Food, water or essentials</option><option value="Shelter">Temporary shelter</option><option value="Other">Other community help</option></select></div>
+          <div class="field"><label for="area">Area in/around Jammu</label><select id="area" name="area" required><option value="">Choose your area</option><option>Jammu City</option><option>Gandhi Nagar</option><option>Trikuta Nagar</option><option>Janipur</option><option>Talab Tillo</option><option>Akhnur Road</option><option>Bari Brahmana</option><option>Other / outside listed areas</option></select></div>
+          <div class="field full"><label>How urgent is it?</label><div class="priority"><label><input type="radio" name="priority" value="Emergency" required/> 🔴 Emergency</label><label><input type="radio" name="priority" value="Urgent"/> 🟠 Urgent</label><label><input type="radio" name="priority" value="Non-urgent"/> 🟢 Non-urgent</label></div></div>
+          <div class="field full"><label for="details">Tell us what happened</label><textarea id="details" name="details" placeholder="Describe what you need, how many people need help, and any important access or safety details…" required maxlength="600"></textarea><span class="hint">Avoid sharing sensitive medical details or exact home addresses in this demo.</span></div>
+          <div class="field full"><label for="landmark">Nearby landmark (optional)</label><input id="landmark" name="landmark" placeholder="e.g. near a main road or public building" maxlength="120"/></div>
+        </div>
+        <div class="submit-row"><button class="btn btn-dark" type="submit">Preview my request ↗</button><button class="btn btn-light" type="reset">Clear</button></div>
+        <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+    <div class="panel" id="volunteers">
+      <div class="panel-head"><h3>Volunteers near you</h3><span class="live-tag">SAMPLE DATA</span></div>
+      <div class="volunteer-tools"><input id="volSearch" class="search" placeholder="Search skill or area…" aria-label="Search volunteers"/><select id="skillFilter" class="filter" aria-label="Filter by skill"><option value="all">All skills</option><option value="rescue">Disaster support</option><option value="medical">Medical</option><option value="elder">Elder care</option><option value="essentials">Essentials</option></select></div>
+      <div class="volunteer-list" id="volunteerList">
+        <article class="volunteer" data-skill="rescue essentials" data-area="Jammu City"><div class="avatar">RK</div><div class="vol-info"><strong>Relief team · North</strong><span>Disaster support · Essentials</span><span>Jammu City</span></div><div class="vol-meta"><div class="distance">~1.2 km</div><div class="status">Demo available</div><button class="contact" data-name="Relief team · North">View contact</button></div></article>
+        <article class="volunteer" data-skill="medical" data-area="Gandhi Nagar"><div class="avatar blue">SP</div><div class="vol-info"><strong>Community care · A</strong><span>Hospital accompaniment</span><span>Gandhi Nagar</span></div><div class="vol-meta"><div class="distance">~2.4 km</div><div class="status">Demo available</div><button class="contact" data-name="Community care · A">View contact</button></div></article>
+        <article class="volunteer" data-skill="elder essentials" data-area="Trikuta Nagar"><div class="avatar orange">NT</div><div class="vol-info"><strong>Neighbourhood support</strong><span>Elder care · Food & essentials</span><span>Trikuta Nagar</span></div><div class="vol-meta"><div class="distance">~3.1 km</div><div class="status">Demo available</div><button class="contact" data-name="Neighbourhood support">View contact</button></div></article>
+        <article class="volunteer" data-skill="rescue medical" data-area="Janipur"><div class="avatar">JM</div><div class="vol-info"><strong>First-aid volunteer · B</strong><span>First aid · Disaster support</span><span>Janipur</span></div><div class="vol-meta"><div class="distance">~4.8 km</div><div class="status busy">Demo limited</div><button class="contact" data-name="First-aid volunteer · B">View contact</button></div></article>
+      </div>
+      <div class="empty" id="noVolunteers" hidden>No sample volunteers match that search. Try another skill or area.</div>
+      <p class="small-muted" style="line-height:1.6;margin:17px 0 0">Names, statuses and distances are fictional demo data. No volunteer has been contacted or verified.</p>
+    </div>
+  </div>
+</section>
+
+<div class="map-section" id="areas"><section class="section">
+  <div class="section-head"><div><span class="kicker">Local response</span><h2>Designed around Jammu.</h2></div><p>A future version could show verified responders, shelters, blocked roads, and safe collection points on a live map.</p></div>
+  <div class="area-grid">
+    <div class="large-map">
+      <svg viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice" aria-label="Illustrative Jammu area map">
+        <rect width="600" height="360" fill="#dfe9d7"/>
+        <path d="M-30 55 Q90 5 180 60 T360 50 T640 65 M-30 120 Q90 75 180 135 T370 118 T640 135 M-30 205 Q70 160 175 213 T370 205 T640 215 M-30 285 Q80 235 180 285 T380 280 T640 300" fill="none" stroke="#c2d4b5" stroke-width="3"/>
+        <path d="M-10 330 C100 300 105 230 180 210 S265 215 295 150 S390 120 415 70 S510 42 630 5" fill="none" stroke="#a7c6d6" stroke-width="22" opacity=".8"/>
+        <path d="M-10 330 C100 300 105 230 180 210 S265 215 295 150 S390 120 415 70 S510 42 630 5" fill="none" stroke="#f9fcfa" stroke-width="11"/>
+        <path d="M30 0 L110 95 L100 160 L150 220 L135 360 M210 0 L240 75 L205 145 L250 220 L225 360 M350 0 L330 90 L375 165 L345 245 L375 360 M500 0 L475 95 L520 180 L495 260 L530 360" fill="none" stroke="#fff" stroke-width="4"/>
+        <path d="M90 250 Q180 170 270 205 T420 125 T560 95" fill="none" stroke="#729b79" stroke-width="3" stroke-dasharray="7 7"/>
+        <g font-size="12" fill="#385b46" font-weight="700"><text x="210" y="155">Jammu City</text><text x="70" y="220">Gandhi Nagar</text><text x="390" y="250">Trikuta Nagar</text><text x="410" y="60">Janipur</text></g>
+        <g><circle cx="190" cy="168" r="22" fill="#d9f36a" opacity=".65"/><circle cx="190" cy="168" r="8" fill="#174e43" stroke="#fff" stroke-width="4"/><circle cx="95" cy="240" r="7" fill="#347a9d" stroke="#fff" stroke-width="3"/><circle cx="420" cy="245" r="7" fill="#c74635" stroke="#fff" stroke-width="3"/><circle cx="420" cy="80" r="7" fill="#174e43" stroke="#fff" stroke-width="3"/></g>
+      </svg>
+      <div class="map-caption">📍 Illustrative coverage — Jammu</div>
+      <div class="map-legend"><span><i class="legend-dot" style="background:#174e43"></i>Community point</span><span><i class="legend-dot" style="background:#347a9d"></i>Care support</span><span><i class="legend-dot" style="background:#c74635"></i>Needs review</span><span>Not live GPS data</span></div>
+    </div>
+    <div class="area-list">
+      <div class="area-row"><div class="area-symbol">⌖</div><div><strong>Jammu City</strong><span>Central coordination hub concept</span></div><div class="area-count">Hub 01</div></div>
+      <div class="area-row"><div class="area-symbol">✚</div><div><strong>Gandhi Nagar</strong><span>Medical and elder-care support concept</span></div><div class="area-count">Zone 02</div></div>
+      <div class="area-row"><div class="area-symbol">⌂</div><div><strong>Trikuta Nagar</strong><span>Neighbour and essentials support</span></div><div class="area-count">Zone 03</div></div>
+      <div class="area-row"><div class="area-symbol">↗</div><div><strong>Outer & hill routes</strong><span>Future hazard and access reporting</span></div><div class="area-count">Planned</div></div>
+    </div>
+  </div>
+</section></div>
+
+<section class="section" id="how">
+  <div class="section-head"><div><span class="kicker">Simple by design</span><h2>Help should be easy to find.</h2></div><p>One straightforward flow for people who need help, volunteers who can offer it, and coordinators who keep everyone informed.</p></div>
+  <div class="how-grid">
+    <article class="how-card"><div class="how-num">01</div><h3>Tell us what’s happening</h3><p>Choose the kind of support, urgency, and general area. Share only what is needed to coordinate safely.</p></article>
+    <article class="how-card"><div class="how-num">02</div><h3>Find a nearby helper</h3><p>Match requests with verified volunteers based on skills, availability, distance, and safety requirements.</p></article>
+    <article class="how-card"><div class="how-num">03</div><h3>Coordinate and follow up</h3><p>In a production system, a coordinator can confirm the match, share status updates, and close the request.</p></article>
+  </div>
+</section>
+</main>
+<footer class="footer"><div><strong>✳ raahat <span style="color:#d9f36a">/</span> Jammu Relief Connect</strong><p>Neighbourhood support, designed for Jammu.</p></div><p class="disclaimer">Hackathon prototype only. Volunteer listings and map pins are fictional. This page does not transmit requests, verify volunteers, track GPS, or dispatch rescue. In an emergency in India, call <b>112</b>.</p></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><h3 id="modalTitle">Volunteer contact</h3><p id="modalText"></p><div class="modal-actions"><button class="btn btn-light" id="closeModal">Close</button><button class="btn btn-dark" id="demoConfirm">Got it</button></div></div></div>
+<script>
+const form=document.getElementById('helpForm');
+const message=document.getElementById('formMessage');
+const toast=document.getElementById('toast');
+let toastTimer;
+function showToast(text){toast.textContent=text;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),3600)}
+form.addEventListener('submit',e=>{
+ e.preventDefault();
+ if(!form.reportValidity())return;
+ const data=new FormData(form);
+ const type=data.get('needType'), area=data.get('area'), priority=data.get('priority');
+ message.textContent=`Demo request preview created for ${area}. Category: ${type}. Priority: ${priority}. No request was sent and no volunteer has been notified.`;
+ document.getElementById('volSearch').value=area==='Other / outside listed areas'?'':area;
+ filterVolunteers();
+ showToast('Demo preview ready — nothing was sent.');
+});
+form.addEventListener('reset',()=>{message.textContent='';document.getElementById('volSearch').value='';document.getElementById('skillFilter').value='all';setTimeout(filterVolunteers,0)});
+const search=document.getElementById('volSearch'), skill=document.getElementById('skillFilter');
+function filterVolunteers(){
+ const q=search.value.trim().toLowerCase(), s=skill.value;let shown=0;
+ document.querySelectorAll('.volunteer').forEach(card=>{
+  const text=(card.textContent+' '+card.dataset.area+' '+card.dataset.skill).toLowerCase();
+  const ok=text.includes(q)&&(s==='all'||card.dataset.skill.split(' ').includes(s));
+  card.style.display=ok?'flex':'none';if(ok)shown++;
+ });
+ document.getElementById('noVolunteers').hidden=shown!==0;
+}
+search.addEventListener('input',filterVolunteers);skill.addEventListener('change',filterVolunteers);
+const backdrop=document.getElementById('modalBackdrop');
+document.querySelectorAll('.contact').forEach(btn=>btn.addEventListener('click',()=>{
+ document.getElementById('modalTitle').textContent=btn.dataset.name;
+ document.getElementById('modalText').textContent='This is a fictional volunteer profile for the hackathon demo. No real phone number or contact details are available, and this button does not connect you to a person.';
+ backdrop.classList.add('show');
+}));
+function closeModal(){backdrop.classList.remove('show')}
+document.getElementById('closeModal').addEventListener('click',closeModal);
+document.getElementById('demoConfirm').addEventListener('click',()=>{closeModal();showToast('Thanks for exploring the Raahat prototype.')});
+backdrop.addEventListener('click',e=>{if(e.target===backdrop)closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+</script>
+</body>
+</html>
